@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Crown</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+  <br>          (this is a Crown!!)
+    <p>
+      <button type="button" onclick="moreCCW()">++ spin up</button>
+      <button type="button" onclick="lessCCW()">-- spin down</button>
+      <button type="button" onclick="runStop()">run/stop</button>
+      <button type="button" onclick="back2og()">go back!</button>
+    </p>
+    <p>
+      <br>This is user instruction:
+      <br> 1) click on spin up, if the crown is rotating clockwisely, you will see 
+             the speed become faster;
+      <br> if the crown is ratating clockwisely, you will see the speed become slower
+            and then it will rotate anticlockwisely and speed will go faster.
+      <br> 2) click on spin down, it does the opposite way as clicking spin up does.
+      <br> 3) click run/stop, it will make the crown start or stop spinning.
+      <br> 4) when the crown is moving around the canvas, it will make the crown go back the original spot.
+    </p>
+    <p>
+    <br> Keyboard and mouse interaction: 
+    <br> Use up arrow, left arrow, down arrow, right arrow on the keyboard can make the crown go up, left, down, right.
+    <br> Use mouse can see the crown from different angle. And the color of the crown will change with the movement of the mouse. 
+    </p>
+    
+    <script src="webgl-utils.js"></script>
+    <script src="webgl-debug.js"></script>
+    <script src="cuon-utils.js"></script>
+    <script src="cuon-matrix-mod.js"></script>
+    <script src="Zhangwenjie_ProjA.js"></script>
+  </body>
+</html>

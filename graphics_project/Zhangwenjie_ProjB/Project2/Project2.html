@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wenjie Zhang Proj2</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+    <br> User instruction: 
+    <br> Use up arrow, left arrow, down arrow, right arrow on the keyboard to move ahead, left, backward, right.
+    <br> Use W, A, S, D to look up, left, down, right.
+    </p>
+    Open the JavaScript Console, please: 
+    (right-click-->'Inspect Element'-->'Console' tab). 
+    <br>
+    Click-and-drag the mouse on the canvas (black area above). What happens?
+    <div id=MouseText> 
+    Mouse Drag totals (CVV x,y coords): 0,0
+    </div>
+    <button type="button" onClick="clearMouse()">Clear</button>
+    <br>
+    Current Quaternion: w + xi + yj + zk where (i,j,k) are 3-way imaginary numbers:
+    <div id=QuatValue>  X=0i, Y=0j, Z=0k, W=1. <br> length=1. </div>
+    <button type="button" onClick="resetQuat()">Reset</button>
+  <!--  Load in the JavaScript libraries supplied by our textbook 
+      (Matsuda et al., 2013 WebGL Programming Guide) that help us
+      with WebGL programming:
+  -->
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-mod.js"></script>
+    <script src="../lib/cuon-matrix-quat.js"></script>
+    <script src="../lib/materials_Ayerdi.js"></script>
+    <script src="../lib/lights-JT.js"></script>
+    <script src="Project2.js"></script>
+  </body>
+</html>
